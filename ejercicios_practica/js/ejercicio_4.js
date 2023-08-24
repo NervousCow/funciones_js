@@ -29,6 +29,14 @@ en consola la lista
 
 */
 
+function generarInvitados() {
+  const invitado1 = String(prompt("Ingrese el nombre del primer invitado:"))
+  const invitado2 = String(prompt("Ingrese el nombre del segundo invitado:"))
+  const invitado3 = String(prompt("Ingrese el nombre del tercer invitado:"))
+
+  return String(`${invitado1}, ${invitado2} y ${invitado3}`)
+}
+
 // Definir y crear la función antes de esta llamada
-invitados = generarInvitados();
+let invitados = generarInvitados();
 console.log(`Mis invitados: ${invitados}`)
